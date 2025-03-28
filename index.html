@@ -5,14 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Age calculator</title>
     <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/js-datepicker/dist/datepicker.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/js-datepicker"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/luxon/3.4.3/luxon.min.js"></script>
   </head>
   <body>
     <div class="container">
       <h1>Age Calculator</h1>
       <label for="birth-date">Enter your birth date:</label>
-      <input class="date-input" type="date" name="birth-date" />
-      <button class="calculate-date">Calculate</button>
-      <span class="result"></span>
+      <input type="text" id="birthdate" placeholder="Выберите дату" />
+      <button id="calculate">Рассчитать возраст</button>
+      <div id="result"></div>
     </div>
     <script src="/javascripts/scripts.js"></script>
   </body>
